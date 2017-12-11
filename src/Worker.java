@@ -14,4 +14,21 @@ public class Worker {
 		this.address = address;
 		this.salary = salary;
 	}
+	
+	Worker(Worker worker)
+	{
+		id=worker.id;
+		fname=worker.fname;
+		lname=worker.lname;
+		email=worker.email;
+		phone=worker.phone;
+		address=worker.address;
+		salary=worker.salary;
+	}
+	
+	public String toString()
+	{
+		String str=""+salary+"\n";
+		return str;
+	}
 }
