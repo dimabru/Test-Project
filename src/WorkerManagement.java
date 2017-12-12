@@ -4,7 +4,7 @@ import java.util.List;
 
 public class WorkerManagement {
 	
-	List <Worker> workers = new ArrayList();
+	private List <Worker> workers = new ArrayList();
 	
 	WorkerManagement()
 	{
@@ -23,7 +23,12 @@ public class WorkerManagement {
 		}
 	}
 	
-	public List<Worker> bubbleSort()
+	public List<Worker> getOriginalWorkerList()
+	{
+		return workers;
+	}
+	
+	/*public List<Worker> bubbleSort()
 	{
 		long start=System.currentTimeMillis();
 		List <Worker> sorted = new ArrayList();
@@ -45,7 +50,7 @@ public class WorkerManagement {
 		}
 		System.out.println("Bubble Sort total time elapsed: " + (System.currentTimeMillis()-start) + " ms");
 		return sorted;
-	}
+	}*/
 	
 	void merge(List<Worker> sorted, int l, int m, int r)
 	{
