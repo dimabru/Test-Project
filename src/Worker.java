@@ -28,7 +28,14 @@ public class Worker {
 	
 	public String toString()
 	{
-		String str=""+salary+"\n";
+		String str="id: " + id + "\r\n"
+				+ "first name: " + fname + "\r\n"
+				+ "last name: " + lname + "\r\n"
+				+ "email: " + email + "\r\n"
+				+ "phone number: " + phone + "\r\n"
+				+ "address: " + address + "\r\n"
+				+ "salary: " + salary + "\r\n"
+				+ "*************************\r\n";
 		return str;
 	}
 }

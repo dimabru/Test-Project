@@ -128,11 +128,18 @@ public class WorkerManagement {
 		String str="";
 		for (int i=0;i<workers.size();i++)
 		{
-			str=str+workers.get(i);
+			str=str + "\n" + workers.get(i);
 		}
 		return str;
 	}
 	
+	public String getOnlySalaries()
+	{
+		String str="";
+		for (int i=0; i<workers.size(); i++)
+			str = str+workers.get(i).salary;
+		return str;
+	}
 }
 
 
